@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.encabezado h1 {
+    margin: 0;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.galeria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.fila {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.imagen {
+    width: 30%;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.imagen img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+.imagen:hover img {
+    filter: brightness(0.5);
+}
+
+.button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    /* Mantiene la fuente del botón igual a la del texto circundante */
+    color: inherit;
+    /* Mantiene el color del texto */
+    cursor: pointer;
+    /* Opcional */
+}
+
+.imagen p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:visited {
+    color: inherit;
+    /* Elimina el color morado para enlaces visitados */
+}
+
+a:hover,
+a:focus {
+    color: inherit;
+    /* Elimina el cambio de color al pasar el cursor o hacer foco */
+    text-decoration: none;
+    /* Asegura que no se subraye al pasar el cursor */
+}
